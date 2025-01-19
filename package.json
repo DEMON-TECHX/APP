@@ -1,0 +1,16 @@
+{
+  "name": "demon-dev-code-sharing",
+  "version": "1.0.0",
+  "description": "A video and code sharing platform for learning JavaScript",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
+
