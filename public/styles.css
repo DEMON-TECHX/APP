@@ -1,155 +1,52 @@
 body {
-  font-family: "Courier New", monospace;
-  background-color: #1a202c;
-  color: #e2e8f0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  background-image: url("https://wallpapers.com/images/featured-small/one-piece-phone-beu8vxkxxywm5vsf.webp");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
   display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(26, 32, 44, 0.85);
-  z-index: -1;
-}
-
-header {
-  background-color: rgba(31, 41, 55, 0.8);
-  backdrop-filter: blur(5px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 h1 {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
-nav button {
-  background-color: #4a5568;
-  color: #ffffff;
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-left: 0.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-nav button:hover {
-  background-color: #2d3748;
-}
-
-main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-section {
-  background-color: rgba(45, 55, 72, 0.8);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  color: #63b3ed;
-  margin-top: 0;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-input,
-textarea,
-button {
   margin-bottom: 1rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
   padding: 0.5rem;
-  background-color: #2d3748;
-  border: 1px solid #4a5568;
-  color: #e2e8f0;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
   border-radius: 4px;
 }
 
 button {
-  background-color: #4299e1;
-  color: #ffffff;
+  background-color: #4caf50;
+  color: white;
   border: none;
+  padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #3182ce;
+  background-color: #45a049;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.video-item,
-.snippet-item {
-  background-color: rgba(45, 55, 72, 0.5);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 4px;
-}
-
-.video-item h3,
-.snippet-item h3 {
-  margin-top: 0;
-  color: #63b3ed;
-}
-
-.video-item video {
-  max-width: 100%;
-  height: auto;
-}
-
-.snippet-item pre {
-  background-color: #2d3748;
-  padding: 1rem;
-  border-radius: 4px;
-  overflow-x: auto;
-}
-
-.hidden {
-  display: none;
-}
-
-#learning-content {
-  background-color: rgba(45, 55, 72, 0.5);
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-#learning-content h3 {
-  color: #63b3ed;
-}
-
-#learning-content ul {
-  padding-left: 1.5rem;
-  list-style-type: disc;
+#status {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
