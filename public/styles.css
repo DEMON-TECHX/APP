@@ -3,7 +3,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
 }
@@ -14,19 +14,19 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 600px;
+  width: 100%;
 }
 
 h1 {
   margin-bottom: 1rem;
-  color: #333;
 }
 
 input {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
@@ -36,17 +36,25 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 4px;
-  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
-#status {
+#videoInfo {
   margin-top: 1rem;
+  text-align: left;
+}
+
+#videoInfo img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
   font-weight: bold;
-  color: #333;
 }
 
